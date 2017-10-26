@@ -1,0 +1,178 @@
+* {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+
+/* header section */
+
+.site-header {
+  width: 100%;
+  height: 80px;
+  background-color: blue;
+  position: relative;
+}
+
+.nav-container {
+  position: absolute;
+  left: 10px;
+  bottom: 16px;
+}
+
+.nav-item {
+  display: inline-block;
+  font-family: "Open sans";
+  font-size: 16px;
+  margin: 0px 10px
+}
+
+.admin-link {
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+  right: 10px;
+}
+
+.main-branding {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* main section */
+
+.site-body {
+  
+  padding: 20px ;
+}
+
+.body-header {
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* cards */
+
+.card-tile {
+  min-height: 380px;
+  background-color: green;
+}
+
+.card-header {
+  position: relative;
+  background-color: #006600;
+  height: 120px;
+}
+
+.card-link-arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.views-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.views-count {
+  position: absolute;
+  right: 19px;
+  top: 30px;
+}
+
+.card-section {
+  width: 100%;
+}
+
+.name-label {
+  margin: 20px 10px 7px 10px;
+}
+
+.time-label {
+  margin: 0px 10px 10px;
+}
+
+.card-link {
+  background-color: #cccccc;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 10px 5% ;
+  padding: 10px;
+}
+
+.playlist-label {
+  margin: 10px 10px 5px;
+}
+
+.playlist-name {
+  margin: 0px 10px 20px;
+}
+
+.attachments-label {
+  margin: 10px 10px 5px;
+}
+
+.attachments-number {
+  margin: 0px 10px 20px;
+  color: blue;
+}
+
+/* media */
+
+@media screen and (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
