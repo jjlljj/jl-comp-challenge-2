@@ -77,8 +77,6 @@ h5 {
 }
 
 .cards-container {
-  /*display: flex;
-  flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -88,13 +86,13 @@ h5 {
 
 .card-tile {
   min-height: 380px;
+  max-width: 600px;
   background-color: green;
 }
 
 .card-header {
   position: relative;
-  background-color: #006600;
-  height: 120px;
+  height: 140px;
 }
 
 .card-link-arrow {
@@ -153,26 +151,71 @@ h5 {
   color: blue;
 }
 
+/* header images */
+
+
+.new-york {
+  background: url(../images/ny.jpg) no-repeat; 
+}
+
+.mvy {
+  background: url(../images/mvy.jpg) no-repeat;
+}
+
+.ct {
+  background: url(../images/ct.jpg) no-repeat;
+}
+
+.co {
+  background: url(../images/co.jpg) no-repeat;
+}
+
+.valparaiso {
+  background: url(../images/valparaiso.jpg) no-repeat;
+}
+
+.berlin {
+  background: url(../images/berlin.jpg) no-repeat;
+}
+
+.cdmx {
+  background: url(../images/cdmx.jpg) no-repeat;
+}
+
+.atacama {
+  background: url(../images/atacama.jpg) no-repeat;
+}
+
+.img-banner {
+  background-position: center;
+  background-size: cover;
+}
+
+
 /* media */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .cards-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .cards-container {
     grid-template-columns: 1fr 1fr;
   }
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .cards-container {
     grid-template-columns: 1fr;
   }
 
-}
+  .main-branding {
+  top: 10px;
+  left: 10px;
+  }
 
+}
