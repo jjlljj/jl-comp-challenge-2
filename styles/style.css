@@ -35,6 +35,10 @@ button {
   outline: none;
 }
 
+button:hover {
+  color: white;
+}
+
 /* header section */
 
 .site-header {
@@ -51,11 +55,16 @@ button {
 }
 
 .nav-item {
-  color: #EFEFEF;
+  color: #e6e6e6;
   display: inline-block;
   font-family: "Lato";
   font-size: 18px;
   margin: 0px 5px
+}
+
+.nav-item:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .nav-icon {
@@ -81,7 +90,7 @@ button {
   position: absolute;
   font-family: "Lato";
   font-weight: 400;
-  color: #EFEFEF;
+  color: #e6e6e6;
   font-size: 40px;
   bottom: 15px;
   right: 20px;
