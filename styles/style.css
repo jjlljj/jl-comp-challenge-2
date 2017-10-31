@@ -1,15 +1,17 @@
 * {
-  font-family: "Open Sans";
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 body {
-  background-color: #cccccc;
+  background-color: #EFEFEF;
+  min-width: 300px;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 34px;
+  font-weight: 800;
 }
 
 h2 {
@@ -29,46 +31,65 @@ h5 {
   font-size: 13px;
 }
 
+button {
+  outline: none;
+}
 
 /* header section */
 
 .site-header {
   width: 100%;
-  height: 80px;
-  background-color: blue;
+  height: 110px;
+  background-color: #2B2B2B;
   position: relative;
 }
 
 .nav-container {
   position: absolute;
   left: 10px;
-  bottom: 16px;
+  bottom: 22px;
 }
 
 .nav-item {
+  color: #EFEFEF;
   display: inline-block;
-  font-family: "Open sans";
-  font-size: 16px;
-  margin: 0px 10px
+  font-family: "Lato";
+  font-size: 18px;
+  margin: 0px 5px
+}
+
+.nav-icon {
+  color: #4d94ff;
+  margin: 0px 5px;
 }
 
 .admin-link {
   position: absolute;
+  font-family: "Lato";
+  color: #4d94ff;
   font-size: 14px;
   top: 10px;
-  right: 10px;
+  right: 20px;
+}
+
+.admin-icon {
+  color:  #EFEFEF;
+  margin: 0 8px;
 }
 
 .main-branding {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #EFEFEF;
+  font-size: 40px;
+  bottom: 15px;
+  right: 20px;
 }
 
 /* main section */
 
 .site-body {
-  
   padding: 20px ;
 }
 
@@ -78,6 +99,7 @@ h5 {
 
 .cards-container {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
 }
@@ -87,7 +109,8 @@ h5 {
 .card-tile {
   min-height: 380px;
   max-width: 600px;
-  background-color: green;
+  background-color: #FFFFFF;
+  box-shadow: 2px 0px 4px #a6a6a6;
 }
 
 .card-header {
@@ -97,18 +120,26 @@ h5 {
 
 .card-link-arrow {
   position: absolute;
+  background: url('../images/arrow.png') no-repeat;
+  background-position: center;
+  background-size: 35px;
+  border: none;
+  width: 40px;
+  height: 40px;
   top: 10px;
   left: 10px;
 }
 
 .views-label {
   position: absolute;
+  color: #FFFFFF;
   top: 10px;
   right: 10px;
 }
 
 .views-count {
   position: absolute;
+  color: #FFFFFF;
   right: 19px;
   top: 30px;
 }
@@ -126,11 +157,14 @@ h5 {
 }
 
 .card-link {
-  background-color: #cccccc;
+  background-color: #EFEFEF;
   display: inline-block;
   box-sizing: border-box;
-  width: 90%;
-  margin: 10px 5% ;
+  text-decoration: none;
+  color: #2B2B2B;
+  word-wrap:break-word;
+  width: 88%;
+  margin: 10px 5%;
   padding: 10px;
 }
 
@@ -148,11 +182,10 @@ h5 {
 
 .attachments-number {
   margin: 0px 10px 20px;
-  color: blue;
+  color: #4d94ff;
 }
 
-/* header images */
-
+/* card header images */
 
 .new-york {
   background: url(../images/ny.jpg) no-repeat; 
@@ -191,31 +224,44 @@ h5 {
   background-size: cover;
 }
 
-
 /* media */
 
 @media screen and (max-width: 1000px) {
   .cards-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
 
 @media screen and (max-width: 700px) {
   .cards-container {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
   .cards-container {
     grid-template-columns: 1fr;
   }
 
-  .main-branding {
-  top: 10px;
-  left: 10px;
+  .site-header {
+    height: 100px;
   }
 
+  .main-branding {
+    top: 15px;
+    left: 18px;
+    font-size: 34px;
+  }
+
+  .admin-link {
+    top: 25px;
+  }
+
+  .nav-container {
+    bottom: 15px;
+  }
+
+  .nav-item {
+    font-size: 15px;
+  }
 }
