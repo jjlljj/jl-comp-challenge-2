@@ -12,6 +12,7 @@ Desktop
 ![Alt text](images/static-comp-challenge-jl-desktop.png?raw=true "Original Comp")
 
 Mobile
+
 ![Alt text](images/static-comp-challenge-jl-mobile.png?raw=true "Original Comp mobile")
 
 to see a live version visit:
